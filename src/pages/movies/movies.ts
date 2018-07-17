@@ -4,10 +4,10 @@ import { ApiService } from '../../services/api.service'
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html',
+  templateUrl: 'movies.html',
   providers: [ ApiService ]
 })
-export class HomePage {
+export class MoviesPage {
 
   constructor(
     public navCtrl: NavController,
@@ -21,7 +21,6 @@ export class HomePage {
   public currentMovies = () => {
     this.apiService.getMovies()
     .subscribe((movies) => {
-      console.log(movies);
       this.movies = movies
     });
   }
