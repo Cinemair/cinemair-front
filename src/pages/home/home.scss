@@ -1,3 +1,27 @@
-page-home {
+page-home {}
 
+.title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+ion-grid {
+    height: 100%;
+}
+
+.main-text {
+    flex: 1;
+    align-items: center
+}
+
+.main-actions {
+    > ion-col {
+        display: flex;
+        justify-content: center;
+    }
 }
